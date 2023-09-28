@@ -1,0 +1,28 @@
+{
+    "name": "locklift-project",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "npx locklift test --network local",
+        "deploy_venom": "npx locklift run -s ./scripts/1-deploy-sample.ts --network venom_testnet"
+    },
+    "author": "",
+    "license": "ISC",
+    "overrides": {
+        "nekoton-wasm": "npm:nekoton-wasm-locklift@1.20.2"
+    },
+    "devDependencies": {
+        "@broxus/tip3": "^1.0.2",
+        "@broxus/tip4": "^1.0.0",
+        "@types/chai": "^4.3.6",
+        "@types/mocha": "^10.0.2",
+        "@types/node": "^20.7.1",
+        "chai": "^4.3.10",
+        "dotenv": "^16.0.3",
+        "everscale-standalone-client": "^2.1.23",
+        "locklift": "^2.5.6",
+        "prettier": "^3.0.3",
+        "ts-mocha": "^10.0.0",
+        "typescript": "^4.7.4"
+    }
+}
