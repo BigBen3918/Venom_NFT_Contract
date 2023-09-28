@@ -1,4 +1,4 @@
-import collection_content from "./collection.json";
+import collection_content from "../config/collection.json";
 
 async function main() {
     const signer = (await locklift.keystore.getSigner("0"))!;
@@ -20,6 +20,8 @@ async function main() {
         },
         value: locklift.utils.toNano(4),
     });
+
+    console.log("tx: ", tx.transaction.totalFees);
 
     console.log(`Collection deployed at: ${sample.address.toString()}`);
 }

@@ -4,7 +4,7 @@
     "description": "",
     "scripts": {
         "test": "npx locklift test --network local",
-        "deploy_venom": "npx locklift run -s ./scripts/1-deploy-sample.ts --network venom_testnet"
+        "deploy_venom": "npx locklift run --script ./scripts/1-deploy-sample.ts --network venom_testnet"
     },
     "author": "",
     "license": "ISC",
@@ -12,7 +12,6 @@
         "nekoton-wasm": "npm:nekoton-wasm-locklift@1.20.2"
     },
     "devDependencies": {
-        "@broxus/tip3": "^1.0.2",
         "@broxus/tip4": "^1.0.0",
         "@types/chai": "^4.3.6",
         "@types/mocha": "^10.0.2",

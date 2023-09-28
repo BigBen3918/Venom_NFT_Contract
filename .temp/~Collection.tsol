@@ -18,7 +18,7 @@ contract Collection is TIP4_2Collection, TIP4_3Collection {
 
     /// _remainOnNft - the number of crystals that will remain after the entire mint 
     /// process is completed on the Nft contract
-    uint128 _remainOnNft = 0 vem;
+    uint128 _remainOnNft = 0 ever;
 
     constructor(
         TvmCell codeNft,

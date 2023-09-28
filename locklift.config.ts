@@ -17,7 +17,6 @@ const config: LockliftConfig = {
 
         // Specify config for extarnal contracts as in exapmple
         externalContracts: {
-            "node_modules/@broxus/tip3/build": ["TokenRoot", "TokenWallet"],
             precompiled: ["Index", "IndexBasis"],
         },
     },
@@ -79,7 +78,7 @@ const config: LockliftConfig = {
             keys: {
                 // Use everdev to generate your phrase
                 // !!! Never commit it in your repos !!!
-                phrase: process.env.VENOM_TESTNET_PHRASE,
+                // phrase: process.env.VENOM_TESTNET_PHRASE,
                 amount: 20,
             },
         },
