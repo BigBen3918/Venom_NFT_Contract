@@ -4,7 +4,8 @@
     "description": "",
     "scripts": {
         "test": "npx locklift test --network local",
-        "deploy_venom": "npx locklift run --script ./scripts/1-deploy-sample.ts --network venom_testnet"
+        "deploy_venom": "npx locklift run --script ./scripts/1-deploy-sample.ts --network venom_testnet",
+        "mint_nft": "npx locklift run --script ./scripts/2-call-mintnft.ts --network venom_testnet"
     },
     "author": "",
     "license": "ISC",

@@ -1,4 +1,5 @@
 import { toNano, WalletTypes } from "locklift";
+import nft_content from "../config/nft.json";
 
 async function main() {
     const signer = (await locklift.keystore.getSigner("0"))!;
@@ -23,7 +24,7 @@ async function main() {
     // firstly get current nft id (totalSupply) for future NFT address calculating
     const { count: id } = await collectionInsance.methods.totalSupply({ answerId: 0 }).call();
     await collectionInsance.methods
-        .mintNft({ json: `{"name":"hello world"}` })
+        .mintNft({ json: JSON.stringify(nft_content) })
         .send({ from: someAccount.address, amount: toNano(1) });
     const { nft: nftAddress } = await collectionInsance.methods.nftAddress({ answerId: 0, id: id }).call();
 
