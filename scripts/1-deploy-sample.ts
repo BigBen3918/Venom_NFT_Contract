@@ -16,7 +16,7 @@ async function main() {
             codeIndexBasis: indexBasisArtifacts.code,
             json: JSON.stringify(collection_content),
         },
-        value: locklift.utils.toNano(0),
+        value: locklift.utils.toNano(1),
     });
 
     console.log("tx: ", tx.transaction.totalFees);
