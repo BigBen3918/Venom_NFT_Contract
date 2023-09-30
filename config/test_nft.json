@@ -1,0 +1,16 @@
+{
+    "type": "Grinding",
+    "name": "Cupid Thumbs",
+    "description": "Cupid Thumbs",
+    "preview": {
+        "source": "https://assets.grinding.today:443/grinding/upload-quest/foto-cupid---thumbbuddiespng1696004247807.png",
+        "mimetype": "image/gif"
+    },
+    "files": [
+        {
+            "source": "https://assets.grinding.today:443/grinding/upload-quest/foto-cupid---thumbbuddiespng1696004247807.png",
+            "mimetype": "image/gif"
+        }
+    ],
+    "external_url": "https://grinding.today/"
+}

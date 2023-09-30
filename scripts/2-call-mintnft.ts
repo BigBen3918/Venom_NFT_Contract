@@ -1,14 +1,13 @@
-import { toNano, WalletTypes, Address } from "locklift";
-import nft_content from "../config/nft.json";
+import { toNano, Address } from "locklift";
+import nft_content from "../config/test_nft.json";
 
 async function main() {
-    const signer = (await locklift.keystore.getSigner("0"))!;
     const collectionArtifacts = locklift.factory.getContractArtifacts("Collection");
 
     // calculation of deployed Collection contract address
     const collectionAddress = await locklift.provider.getExpectedAddress(collectionArtifacts.abi, {
         tvc: collectionArtifacts.tvc,
-        publicKey: signer.publicKey,
+        publicKey: "a3e02d56720f622fb338bf271c3aff532bf26c47061bfee2f19a76009346c737",
         initParams: {}, // we don't have any initParams for collection
     });
     // initialize contract object by locklift

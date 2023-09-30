@@ -1,4 +1,4 @@
-import collection_content from "../config/collection.json";
+import collection_content from "../config/test.json";
 
 async function main() {
     const nftArtifacts = locklift.factory.getContractArtifacts("Nft");

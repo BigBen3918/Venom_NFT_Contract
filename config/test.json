@@ -1,0 +1,16 @@
+{
+    "type": "Test NFT",
+    "name": "Test",
+    "description": "This is Test NFT Collection",
+    "preview": {
+        "source": "https://i.ibb.co/CnmffPt/No-Profile-BG.png",
+        "mimetype": "image/png"
+    },
+    "files": [
+        {
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREP0vlmTNO1ATKWQ6-5596BDqKlZKsEgqbwQ&usqp=CAU",
+            "mimetype": "image/png"
+        }
+    ],
+    "external_url": ""
+}

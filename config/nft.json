@@ -1,10 +1,11 @@
 {
     "type": "NoProfile NFT",
+    "id": 1,
     "name": "No Profile #1",
     "description": "No Profile NFT is committed to fostering equality through PFP (Profile Picture) NFTs, all sharing a consistent color tone and style. Powered by the Venom Blockchain, No Profile NFTs are the future of digital art.",
     "preview": {
         "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX4J0hQ5ZgHVpwvUfa_G4gdMq8ojDwh6maHoEBcJZ7WknEMpSU8hNFwCTiFl3mIbl9hg&usqp=CAU",
-        "mimetype": "image/png"
+        "mimetype": "image/gif"
     },
     "files": [
         {
@@ -12,7 +13,6 @@
             "mimetype": "metadata/json"
         }
     ],
-    "Collection": "No Profile",
     "attributes": [],
     "external_url": "https://noprofile.xyz"
 }

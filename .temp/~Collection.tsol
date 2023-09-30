@@ -4,9 +4,9 @@ pragma AbiHeader expire;
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
 
-import '@broxus/tip4/contracts/TIP4_2/TIP4_2Collection.tsol';
-import '@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol';
-import './Nft.tsol';
+import 'd:/Working/NFT/venom-nft/node_modules/@broxus/tip4/contracts/TIP4_2/TIP4_2Collection.tsol';
+import 'd:/Working/NFT/venom-nft/node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol';
+import './~Nft.tsol';
 
 contract Collection is TIP4_2Collection, TIP4_3Collection {
 
