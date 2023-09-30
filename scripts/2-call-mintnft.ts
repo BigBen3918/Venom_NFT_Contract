@@ -1,4 +1,4 @@
-import { toNano, WalletTypes } from "locklift";
+import { toNano, WalletTypes, Address } from "locklift";
 import nft_content from "../config/nft.json";
 
 async function main() {
@@ -12,20 +12,16 @@ async function main() {
         initParams: {}, // we don't have any initParams for collection
     });
     // initialize contract object by locklift
+    console.log(collectionAddress);
     const collectionInsance = locklift.factory.getDeployedContract("Collection", collectionAddress);
 
-    // creating new account for Collection calling (or you can get already deployed by locklift.factory.accounts.addExistingAccount)
-    const { account: someAccount } = await locklift.factory.accounts.addNewAccount({
-        type: WalletTypes.EverWallet,
-        value: toNano(10),
-        publicKey: signer.publicKey,
-    });
+    const newAddress = new Address("0:f5cd38655071c65dc8570c3119d0bedad70e7109436c128dbc9de16fc80e3540");
     // call mintNft function
     // firstly get current nft id (totalSupply) for future NFT address calculating
     const { count: id } = await collectionInsance.methods.totalSupply({ answerId: 0 }).call();
     await collectionInsance.methods
         .mintNft({ json: JSON.stringify(nft_content) })
-        .send({ from: someAccount.address, amount: toNano(1) });
+        .send({ from: newAddress, amount: toNano(0.1) });
     const { nft: nftAddress } = await collectionInsance.methods.nftAddress({ answerId: 0, id: id }).call();
 
     console.log(`NFT: ${nftAddress.toString()}`);
